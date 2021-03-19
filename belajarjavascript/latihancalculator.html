@@ -1,0 +1,79 @@
+<!--nama file calc.php-->
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Calculator</title>
+ <style type="text/css">
+/* .calculator {
+    width: 100%;
+} */
+  .tombol{
+   background-color: deepskyblue;
+  }
+  .tabel{
+   background-color: gold;
+   margin: auto;
+   padding: 10px;
+  }
+ 
+ </style>
+</head>
+<body>
+ <form name="calculator">
+  
+  <table style="background-color: white" class="tabel">
+   <caption>Calculator</caption>
+   <tr>
+    <td>Angka 1</td><td>:</td><td><input type="number" name="angka1"></td>
+   </tr>
+   <tr>
+    <td>Angka 2</td><td>:</td><td><input type="number" name="angka2"></td>
+   </tr>
+   <tr>
+    <td>Hasil</td><td>:</td><td><input type="number" name="hasil"></td>
+   </tr>
+   <tr>
+    <td colspan="3" align="center">
+     <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+     <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+     <input class="tombol" type="button" onclick="kali()" value="  *  ">
+     <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+     <input class="tombol" type="button" onclick="hapus()" value="  C  " id="hapus">
+     <button class="tombol" onclick="document.getElementById('clear').value ='+','-' ">C</button>
+
+    </td>
+   </tr>
+  </table>
+ </form>
+
+</body>
+</html>
+<script type="text/javascript">
+function tambah(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1+angka2;
+ document.calculator.hasil.value=hasil;
+}
+function kurang(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1-angka2;
+ document.calculator.hasil.value=hasil;
+}
+function kali(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1*angka2;
+ document.calculator.hasil.value=hasil;
+}
+function bagi(){
+ var angka1=parseFloat(document.calculator.angka1.value);
+ var angka2=parseFloat(document.calculator.angka2.value);
+ var hasil= angka1/angka2;
+ document.calculator.hasil.value=hasil;
+}
+function clear(){
+    
+}
+</script>    

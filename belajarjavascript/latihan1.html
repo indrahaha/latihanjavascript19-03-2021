@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id='demo_text'>ini adalah text awal</p>
+
+<button id='demo_btn' onclick="ubahtext()">ubah text</button>
+<button onclick='textwrite()'>write</button>
+<button onclick='showalern()'>alern</button>
+<button onclick='showConsole()'>console</button>
+
+<script>
+    function ubahtext(){
+        var text = document.getElementById('demo_text').innerHTML;
+        if(text == 'ini adalah text awal'){
+            document.getElementById('demo_text').innerHTML='setelah di modif oleh javascript';
+            document.getElementById('demo_btn').innerHTML='kembali';
+        }else{
+            document.getElementById('demo_text').innerHTML='ini adalah text awal';
+            document.getElementById('demo_btn').innerHTML='ubah text';
+        }
+        
+    }
+
+    function textwrite(){
+            document.write('text awal');
+        }
+    function showalern(){
+        alert('ini adalah contoh alern');
+    }
+    function showConsole(){
+        console.log(5+8);
+    }
+
+</script>
+
+
+
+</body>
+</html> 
