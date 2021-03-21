@@ -1,0 +1,30 @@
+body {
+	
+	width: 80%;
+	margin: 100px;
+	padding: 50px; 
+	background-color: lightblue;
+}
+
+.tombol{
+           background-color: deepskyblue;
+          }
+.tabel{
+    background-color: gold;
+    margin: auto;
+    padding: 10px;
+    }
+ .container {
+ 		margin-bottom: 20px;
+ 		padding-top: 20px;
+ 		background-color: white;
+ }
+ .container .row-hasil{
+ 	padding-left: 300px;
+ }
+ .container .row .operator{
+ 
+ 	column-width: 50px;
+ 	padding-right: 50px;
+ 	size: 100px;
+ }
