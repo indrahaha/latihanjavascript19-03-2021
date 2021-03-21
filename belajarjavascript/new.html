@@ -7,30 +7,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Calculator</title>
-    <style type="text/css">
-        /* .calculator {
-            width: 100%;
-        } */
-          .tombol{
-           background-color: deepskyblue;
-          }
-          .tabel{
-           background-color: gold;
-           margin: auto;
-           padding: 10px;
-          }
-         
-         </style>
+    
   </head>
   <body>
-    
+    <form name="calculator">
     <div class="container">
         <div class="row">
           <div class="col-sm">
             <td>Angka 1</td><td>:</td><td><input type="number" name="angka1"></td>
           </div>
-          <div class="col-sm"><select id=”op”>
+          <div class="operator"><select id=”operator”>
             <option value=”+”>+</option>
             <option value=”-”>-</option>
             <option value=”x”>x</option>
@@ -42,7 +30,7 @@
       
 
       <div class="container">
-        <div class="row">
+        <div class="row-hasil">
           <div class="col-sm">
           </div>
           <div class="col-sm">
@@ -61,6 +49,7 @@
           <div class="col"><input class="tombol" type="button" onclick="bagi()" value="  /  "></div>
         </div>
     </div>
+  </form>
 
     <script type="text/javascript">
         function tambah(){
